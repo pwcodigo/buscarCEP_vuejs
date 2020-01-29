@@ -29,7 +29,7 @@
             <div class="row align-items-center justify-content-center">
                 <div class="col-12">
                     <div class="col-8">
-                    <form>
+                    <form @submit.prevent="save" novalidate="true"> 
                         <div class="form-group">
                             <label for="cep">Informe o seu cep:</label>
                             <!-- Aqui estou limitando pelo html aceitar até 8 caracteres -->
